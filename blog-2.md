@@ -1,6 +1,5 @@
 Here's your content formatted as a `.md` (Markdown) file:
 
-```markdown
 # Async/Await in TypeScript
 
 ## Introduction
