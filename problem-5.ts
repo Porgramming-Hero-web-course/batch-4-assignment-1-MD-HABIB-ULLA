@@ -1,21 +1,8 @@
-interface Profile {
-  name: string;
-  age: number;
-  email: string;
-}
-
-const updateProfile = (
-  profile: Profile,
-  updates: Partial<Profile>
-): Profile => {
-  return { ...profile, ...updates };
-};
-
-const myProfile: Profile = {
-  name: "Alice",
-  age: 25,
-  email: "alice@example.com",
-};
-const updatedProfile = updateProfile(myProfile, { age: 26 });
-
-console.log(updatedProfile); 
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+    return obj[key];
+  }
+  
+  const person = { name: "Alice", age: 30 };
+  
+  console.log(getProperty(person, "name")); 
+  
