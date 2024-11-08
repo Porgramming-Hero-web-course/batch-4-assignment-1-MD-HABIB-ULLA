@@ -1,6 +1,6 @@
-type sum = (array: number[]) => number;
+type Sum = (array: number[]) => number;
 
-const sumArray: sum = (array) => {
+const sumArray: Sum = (array) => {
   return array.reduce((acc, current) => acc + current, 0);
 };
 

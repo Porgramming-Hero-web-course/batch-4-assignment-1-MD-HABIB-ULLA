@@ -1,6 +1,6 @@
-type removeDuplicates = (array: number[]) => number[];
+type RemoveDuplicates = (array: number[]) => number[];
 
-const removeDuplicates: removeDuplicates = (array) => {
+const removeDuplicates: RemoveDuplicates = (array) => {
   const filteredNum: number[] = [];
   array.map((num) => {
     if (!filteredNum.includes(num)) {

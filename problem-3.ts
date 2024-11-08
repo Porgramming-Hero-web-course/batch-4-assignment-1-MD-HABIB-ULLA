@@ -1,6 +1,6 @@
-type countWordFunc = (sentence: string, word: string) => number;
+type CountWordFunc = (sentence: string, word: string) => number;
 
-const countWordOccurrences: countWordFunc = (sentence, word) => {
+const countWordOccurrences: CountWordFunc = (sentence, word) => {
   const lowercaseSentence = sentence.toLowerCase();
   const lowercaseWord = word.toLowerCase();
 
